@@ -1,0 +1,29 @@
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+    gap: 1em;
+}
+
+.galeria div{
+    
+    border: 1px solid black;
+}
+
+.galeria img{
+    height: 300px;
+    width: 420px;
+}
+
+@media screen and (max-width: 768px){
+    .galeria{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .galeria img{
+    height: 300px;
+    width: 460px;
+}
+}
